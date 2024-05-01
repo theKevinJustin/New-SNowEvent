@@ -3,7 +3,7 @@ Use PowerShell script to take SCOM alerts to create ITSM ServiceNow (SNOW) event
 
 New-SNOWEvent.ps1 v1.0.0.0
 
-Download [here](https://github.com/theKevinJustin/New-SNowEvent/blob/main/New-SNowEvent.ps1)
+Download [here](https://github.com/theKevinJustin/New-SNowEvent/blob/main/New-SNowEventGeneric.ps1)
 
 ### New-SNOWEvent
 Create ServiceNow events leveraging multiple SCOM alert fields, and updates SCOM alert Owner, TicketID, and ResolutionState with successful incident creation.
