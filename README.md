@@ -26,6 +26,10 @@ $Alerts = get-scomalert -ResolutionState 0 -severity 1
 # Debug
 $Alerts[0] | fl ID,Name,Description,Severity,MonitoringObjectDisplayName
 
+$AlertID = $Alerts[0].ID
+$AlertName = $Alerts[0].Name
+$TeamNameHere = "MECM"
+
 # Run from PowerShell on SCOM MS (with successful pre-requisite verification)
-.\New-SNOWEvent.ps1 -AlertName $Alerts[0].Name -AlertID $Alerts[0].ID -Impact 4 -Urgency 4 -Priority 3 -AssignmentGroup "System Admin" -BusinessService "System Management" -Category Support -SubCategory Repair -Channel Direct
+.\New-SNOWEventGeneric.ps1 -AlertName $AlertName -AlertID $AlertID -Team $TeamNameHere
 ```
