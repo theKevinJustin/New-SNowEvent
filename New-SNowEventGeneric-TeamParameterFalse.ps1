@@ -83,7 +83,7 @@ Param (
 		 [ValidateNotNullorEmpty()]
 		 [String]$AssignmentGroup,
      [Parameter(
-	 	 Mandatory=$true,
+	 	 Mandatory=$false,
          ValueFromPipeline=$true,
 	 	 Position=3)]
 		 [ValidateNotNullorEmpty()]
@@ -902,7 +902,7 @@ $AlertDescription = $Alert.Description
 # Display AlertDescription (Debug)
 # $AlertDescription
 
-<# Determine SCOM Alert Description exclude JSON special characters
+<# Determine SCOM Alert Description excludex JSON special characters
 #===============================================
 # NOTE * Uncomment as needed for debug write-host lines
 #>
